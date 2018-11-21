@@ -1,6 +1,5 @@
 package app;
 
-import javax.crypto.KeyGenerator;
 import java.math.BigInteger;
 
 public class App {
