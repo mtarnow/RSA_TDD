@@ -1,4 +1,4 @@
-package test;
+package app;
 
 import app.Algo;
 import org.junit.Rule;
