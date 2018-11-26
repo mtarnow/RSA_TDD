@@ -15,10 +15,13 @@ public class App {
 
         RSAEncryptor encryptor = new RSAEncryptor();
         BigInteger[] cryptogram = encryptor.encrypt(message, encryptKey);
-        System.out.println(cryptogram);
 
         RSADecryptor decryptor = new RSADecryptor();
         String decryptedMessage = decryptor.decrypt(cryptogram, decryptKey);
-        System.out.println(decryptedMessage);
+
+        System.out.println("Original: "+ message);
+        System.out.println("Cryptogram: " + cryptogram[0]);
+        System.out.println("Decrypted: " + decryptedMessage);
+
     }
 }
