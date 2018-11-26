@@ -16,7 +16,7 @@ public class Algo {
     }
 
     // returns the GCD of a and b
-    private static BigInteger euclidesGCD(BigInteger a, BigInteger b) {
+    public static BigInteger euclidesGCD(BigInteger a, BigInteger b) {
         return a.gcd(b);
     }
 

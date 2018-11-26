@@ -182,4 +182,13 @@ public class AlgoTest {
         exception.expect(IllegalArgumentException.class);
         Algo.fastPower(a, b, m);
     }
+
+    @Test
+    public void euclidesGCD_knownResult () {
+        BigInteger a = new BigInteger("12");
+        BigInteger b = new BigInteger("3");
+
+        BigInteger result = Algo.euclidesGCD(a, b);
+        assertEquals(new BigInteger("3"), result);
+    }
 }
