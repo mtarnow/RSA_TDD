@@ -1,6 +1,7 @@
 package app;
 
 import app.Algo;
+import java.lang.*;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -28,16 +29,15 @@ public class AlgoTest {
         // pseudoprime (151 * 331)
         BigInteger b = new BigInteger("49981");
         boolean result = Algo.euclidesAreCoprime(a, b);
-
         assertTrue(result);
     }
 
     @Test
     public void euclidesAreCoprimeTest_notCoprimes() {
         // (3 * k)
-        BigInteger a = new BigInteger("10000021");
+        BigInteger a = new BigInteger("100");
         // pseudoprime (3 * 43 * 257)
-        BigInteger b = new BigInteger("33153");
+        BigInteger b = new BigInteger("50");
         boolean result = Algo.euclidesAreCoprime(a, b);
 
         assertFalse(result);
@@ -73,7 +73,7 @@ public class AlgoTest {
         BigInteger b = new BigInteger("33153");
         boolean result = Algo.euclidesAreCoprime(a, b);
 
-        assertFalse(result);
+        assertTrue(result);
     }
 
     @Rule

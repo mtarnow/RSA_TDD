@@ -10,9 +10,9 @@ public class Algo {
         if (a.equals(BigInteger.ZERO) || b.equals(BigInteger.ZERO))
             throw new IllegalArgumentException("arguments cannot be equal to 0");
         else if (euclidesGCD(a, b).compareTo(BigInteger.ONE) == 0)
-            return false;
-        else
             return true;
+        else
+            return false;
     }
 
     // returns the GCD of a and b
