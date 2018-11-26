@@ -8,7 +8,6 @@ import org.junit.rules.ExpectedException;
 import java.math.BigInteger;
 
 import static org.junit.Assert.*;
-import static org.testng.AssertJUnit.assertTrue;
 
 public class AlgoTest {
     @Test
