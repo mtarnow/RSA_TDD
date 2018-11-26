@@ -71,7 +71,7 @@ public class Algo {
         } else if (m.compareTo(BigInteger.ZERO) <= 0) {
             throw new IllegalArgumentException("argument 'm' cannot be equal to or less than 0");
         } else {
-            return new BigInteger("1");
+            return a.modPow(b, m);
         }
     }
 }
