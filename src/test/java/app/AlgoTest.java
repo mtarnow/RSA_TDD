@@ -197,4 +197,5 @@ public class AlgoTest {
         BigInteger b =BigInteger.valueOf(4788);
         assertEquals(Algo.lcm(a,b),BigInteger.valueOf(6056820));
     }
+
 }
