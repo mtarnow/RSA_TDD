@@ -74,7 +74,7 @@ public static BigInteger lcm(BigInteger x, BigInteger y )
             while (a .compareTo(BigInteger.ONE)>0)
             {
                 // q is quotient
-                if (m.compareTo(BigInteger.ZERO)<0) return  BigInteger.valueOf(-1);
+                if (m.compareTo(BigInteger.ZERO)<=0) return  BigInteger.valueOf(-1);
                 BigInteger q = a.divide(m);
 
                 BigInteger t = m;
