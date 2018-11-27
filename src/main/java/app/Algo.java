@@ -16,7 +16,10 @@ public class Algo {
         else
             return false;
     }
-
+public static BigInteger lcm(BigInteger x, BigInteger y )
+{
+    return x.multiply(y).divide(euclidesGCD(x,y));
+}
     // returns the GCD of a and b
     public static BigInteger euclidesGCD(BigInteger a, BigInteger b) {
         return a.gcd(b);
