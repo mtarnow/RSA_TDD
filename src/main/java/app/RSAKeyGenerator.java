@@ -7,7 +7,7 @@ public class RSAKeyGenerator implements IKeyGenerator<BigInteger[]> {
 
 //    @Override
     public BigInteger[] generate() {
-/*
+
         BigInteger p = BigInteger.probablePrime(1024, new Random());
         BigInteger q = BigInteger.probablePrime(1024, new Random());
         BigInteger n = p.multiply(q);
@@ -18,8 +18,8 @@ public class RSAKeyGenerator implements IKeyGenerator<BigInteger[]> {
         {
             e=BigInteger.probablePrime(1024,new Random());
         }
-        BigInteger d=Algo.euclidesInverse(e,fi);*/
-
-        return  null;
+        BigInteger d=Algo.euclidesInverse(e,fi);
+        BigInteger[] keys ={n,d,n,e};
+        return keys;
     }
 }
