@@ -10,6 +10,14 @@ import java.math.BigInteger;
 import static org.junit.Assert.*;
 
 public class AlgoTest {
+
+    @Test
+   public void  euclidGcdTestNoCoprime(){
+       BigInteger a =BigInteger.valueOf(5040);
+       BigInteger b=BigInteger.valueOf(29120);
+       BigInteger result =Algo.euclidesGCD(a,b);
+       assertEquals(result,BigInteger.valueOf(560));
+   }
     @Test
     public void euclidesAreCoprimeTest_primes() {
         // prime
@@ -35,9 +43,9 @@ public class AlgoTest {
     @Test
     public void euclidesAreCoprimeTest_notCoprimes() {
         // (3 * k)
-        BigInteger a = new BigInteger("10000021");
+        BigInteger a = new BigInteger("13860");
         // pseudoprime (3 * 43 * 257)
-        BigInteger b = new BigInteger("33153");
+        BigInteger b = new BigInteger("18200");
         boolean result = Algo.euclidesAreCoprime(a, b);
 
         assertFalse(result);
