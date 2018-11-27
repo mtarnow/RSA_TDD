@@ -190,4 +190,11 @@ public class AlgoTest {
         exception.expect(IllegalArgumentException.class);
         Algo.fastPower(a, b, m);
     }
+
+    @Test
+    public void lcmTest() {
+        BigInteger a=BigInteger.valueOf(106260);
+        BigInteger b =BigInteger.valueOf(4788);
+        assertEquals(Algo.lcm(a,b),BigInteger.valueOf(6056820));
+    }
 }
