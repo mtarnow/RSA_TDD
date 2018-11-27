@@ -14,7 +14,7 @@ public class CryptDecryptTest {
         RSAKeyGenerator keygen=new RSAKeyGenerator();
         BigInteger[] key=keygen.generate();
         BigInteger[]  publicKey= Arrays.copyOfRange(key, 0, 2)  ;
-        BigInteger[] privateKey=Arrays.copyOfRange(key, 1, 3);
+        BigInteger[] privateKey=Arrays.copyOfRange(key, 2, 4);
         String  cryptogram="Ala ma kota !! 11 ą ";
         RSAEncryptor encryptor=new RSAEncryptor();
         RSADecryptor decryptor =new RSADecryptor();
