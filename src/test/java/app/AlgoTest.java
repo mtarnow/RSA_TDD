@@ -184,18 +184,17 @@ public class AlgoTest {
     }
 
     @Test
-<<<<<<< HEAD
+
     public void euclidesGCD_knownResult () {
         BigInteger a = new BigInteger("12");
         BigInteger b = new BigInteger("3");
 
         BigInteger result = Algo.euclidesGCD(a, b);
         assertEquals(new BigInteger("3"), result);
-=======
+    }
     public void lcmTest() {
         BigInteger a=BigInteger.valueOf(106260);
         BigInteger b =BigInteger.valueOf(4788);
         assertEquals(Algo.lcm(a,b),BigInteger.valueOf(6056820));
->>>>>>> origin/implement
     }
 }
