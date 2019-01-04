@@ -2,7 +2,7 @@ package app;
 
 import java.lang.Math;
 import java.math.BigInteger;
-import java.util.function.BiFunction;
+//import java.util.function.BiFunction;
 
 public class Algo {
     // returns true if a and b are coprime and false otherwise
