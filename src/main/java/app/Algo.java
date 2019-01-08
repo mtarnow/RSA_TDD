@@ -29,7 +29,37 @@ public class Algo {
         } else {
 
             //Do czasu znalezienia problemu
-            return new BigInteger("1");
+       //     return new BigInteger("1");
+            BigInteger m0 = m;
+            BigInteger y = BigInteger.ZERO, x = BigInteger.ONE;
+
+            if (m == BigInteger.ONE)
+                return BigInteger.ZERO;
+
+            while (a .compareTo(BigInteger.ONE)>0)
+            {
+                // q is quotient
+                if (m.compareTo(BigInteger.ZERO)<=0) return  BigInteger.valueOf(-1);
+                BigInteger q = a.divide(m);
+
+                BigInteger t = m;
+
+                // m is remainder now, process
+                // same as Euclid's algo
+                m = a. mod(m);
+                a = t;
+                t = y;
+
+                // Update x and y
+                y = x .subtract(q .multiply(y));
+                x = t;
+            }
+
+            // Make x positive
+            if (x .compareTo(BigInteger.ZERO)<0)
+                x =x.add(m0);
+
+            return x;
 /*
             BigInteger u= new BigInteger("1");
             BigInteger x= new BigInteger("0");
